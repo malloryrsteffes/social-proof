@@ -57,17 +57,24 @@ h1 {
 #testimonials .testimonial {
   background-color: #502050;
   color: white;
-  padding: 25px 15px;
+  padding: 25px 25px;
   border-radius: 10px; }
   #testimonials .testimonial h5 {
     font-size: 1.1rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 1.5em; }
   #testimonials .testimonial p {
     font-size: 0.8rem;
     font-weight: 300; }
+  #testimonials .testimonial img {
+    float: left;
+    max-width: 50px;
+    margin: 1rem; }
   #testimonials .testimonial .title {
     color: #ee68a4;
     font-weight: 300; }
+  #testimonials .testimonial .quote {
+    clear: both; }
 
 .top-svg {
   position: absolute;
