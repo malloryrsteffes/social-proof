@@ -17,6 +17,10 @@ h1 {
 
 #main .container-fluid {
   width: 80%; }
+  @media (max-width: 460px) {
+    #main .container-fluid {
+      width: 100%;
+      padding: 0 3rem; } }
   #main .container-fluid p.lead {
     font-size: 1.2rem;
     line-height: 1.7; }
@@ -24,21 +28,27 @@ h1 {
 .ratings-row {
   flex-direction: column;
   display: flex;
-  align-items: end; }
+  align-items: end;
+  text-align: center; }
 
-.r-2 {
-  padding-left: 4rem; }
+@media (min-width: 1440px) {
+  .r-2 {
+    padding-left: 4rem; }
 
-.r-3 {
-  padding-left: 8rem; }
+  .r-3 {
+    padding-left: 8rem; }
 
+  .ratings {
+    width: 450px;
+    display: inline-block;
+    text-align: left; }
+    .ratings span {
+      display: inline !important; } }
 .ratings {
   background-color: #f7f2f7;
   margin: 10px 0px;
   padding: 15px;
-  border-radius: 10px;
-  display: inline-block;
-  min-width: 450px; }
+  border-radius: 10px; }
   .ratings .fas {
     padding-left: 5px;
     padding-right: 5px;
@@ -46,19 +56,24 @@ h1 {
   .ratings span {
     font-size: 0.8rem;
     font-weight: 800 !important;
-    padding-left: 10px; }
+    padding-left: 10px;
+    display: block; }
 
 #testimonials .container-fluid {
   width: 80%; }
-#testimonials .t-2 {
-  margin-top: 2rem; }
-#testimonials .t-3 {
-  margin-top: 4rem; }
+@media (min-width: 1440px) {
+  #testimonials .t-2,
+  #testimonials .t-3 {
+    margin-top: 2rem; } }
+@media (min-width: 1440px) {
+  #testimonials .t-3 {
+    margin-top: 4rem; } }
 #testimonials .testimonial {
   background-color: #502050;
   color: white;
   padding: 25px 25px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-bottom: 1rem; }
   #testimonials .testimonial h5 {
     font-size: 1.1rem;
     margin-bottom: 0;

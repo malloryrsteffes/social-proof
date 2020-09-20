@@ -14,6 +14,8 @@ $white: white;
 // Screen Sizes
 
 $screen-xs: 375px;
+$screen-sm: 460px;
+$screen-md: 768px;
 $screen-lg: 1440px;
 
 body {
@@ -36,6 +38,10 @@ h1 {
 #main {
   .container-fluid {
     width: 80%;
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      padding: 0 3rem;
+    }
     p.lead {
       font-size: 1.2rem;
       line-height: 1.7;
@@ -46,14 +52,24 @@ h1 {
   flex-direction: column;
   display: flex;
   align-items: end;
+  text-align: center;
 }
+@media (min-width: $screen-lg) {
+  .r-2 {
+    padding-left: 4rem;
+  }
 
-.r-2 {
-  padding-left: 4rem;
-}
-
-.r-3 {
-  padding-left: 8rem;
+  .r-3 {
+    padding-left: 8rem;
+  }
+  .ratings {
+    width: 450px;
+    display: inline-block;
+    text-align: left;
+    span {
+      display: inline !important;
+    }
+  }
 }
 
 .ratings {
@@ -66,31 +82,36 @@ h1 {
     font-size: 0.8rem;
     font-weight: 800 !important;
     padding-left: 10px;
+    display: block;
   }
   background-color: $light-gray;
   margin: 10px 0px;
   padding: 15px;
   border-radius: 10px;
-  display: inline-block;
-  min-width: 450px;
 }
 
 #testimonials {
   .container-fluid {
     width: 80%;
   }
-
-  .t-2 {
-    margin-top: 2rem;
+  @media (min-width: $screen-lg) {
+    .t-2,
+    .t-3 {
+      margin-top: 2rem;
+    }
   }
+
   .t-3 {
-    margin-top: 4rem;
+    @media (min-width: $screen-lg) {
+      margin-top: 4rem;
+    }
   }
   .testimonial {
     background-color: $primary;
     color: white;
     padding: 25px 25px;
     border-radius: 10px;
+    margin-bottom: 1rem;
     h5 {
       font-size: 1.1rem;
       margin-bottom: 0;
