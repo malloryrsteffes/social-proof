@@ -21,19 +21,22 @@ body {
   font-size: 1rem;
   color: $primary;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
 h1 {
   font-size: 3.6rem;
-  font-weight: bold;
 }
 
 #main {
-  padding-top: 10%;
-  min-height: 100vh;
   .container-fluid {
     width: 80%;
     background: $white;
-    min-height: 1000px;
     p.lead {
       font-size: 1.2rem;
       line-height: 1.7;
@@ -43,28 +46,63 @@ h1 {
 .ratings-row {
   flex-direction: column;
   display: flex;
+  align-items: end;
 }
+
 .r-2 {
-  padding-left: 5rem;
+  padding-left: 4rem;
 }
 
 .r-3 {
-  padding-left: 10rem;
+  padding-left: 8rem;
 }
+
 .ratings {
   .fas {
     padding-left: 5px;
     padding-right: 5px;
     color: goldenrod;
   }
-  .span {
-    font-size: 0.5rem;
+  span {
+    font-size: 0.8rem;
     font-weight: 800 !important;
+    padding-left: 10px;
   }
   background-color: $light-gray;
   margin: 10px 0px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   display: inline-block;
   min-width: 450px;
+}
+
+#testimonials {
+  .container-fluid {
+    width: 80%;
+  }
+
+  .t-2 {
+    margin-top: 2rem;
+  }
+  .t-3 {
+    margin-top: 4rem;
+  }
+  .testimonial {
+    background-color: $primary;
+    color: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    h5 {
+      font-size: 1.1rem;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 0.8rem;
+      font-weight: 300;
+    }
+    .title {
+      color: $secondary;
+      font-weight: 300;
+    }
+  }
 }
