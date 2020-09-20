@@ -36,7 +36,6 @@ h1 {
 #main {
   .container-fluid {
     width: 80%;
-    background: $white;
     p.lead {
       font-size: 1.2rem;
       line-height: 1.7;
@@ -105,4 +104,15 @@ h1 {
       font-weight: 300;
     }
   }
+}
+.top-svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.bottom-svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }

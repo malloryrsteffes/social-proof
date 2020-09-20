@@ -16,8 +16,7 @@ h1 {
   font-size: 3.6rem; }
 
 #main .container-fluid {
-  width: 80%;
-  background: white; }
+  width: 80%; }
   #main .container-fluid p.lead {
     font-size: 1.2rem;
     line-height: 1.7; }
@@ -69,5 +68,16 @@ h1 {
   #testimonials .testimonial .title {
     color: #ee68a4;
     font-weight: 300; }
+
+.top-svg {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.bottom-svg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
 
 /*# sourceMappingURL=main.css.map */
